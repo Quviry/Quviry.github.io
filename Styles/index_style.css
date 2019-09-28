@@ -5,15 +5,40 @@
 body,html {
   background-color: black ;
   color: aliceblue ;
-  width: 100%;
   height: 100%;
+  top: 0px;
+  left: 0px;
+  width: available;
+  justify-content: center;
+  overflow: hidden;
 }
+body{
+  overflow: auto;
+}
+
+/*Alwais on screen section*/
+.target {
+  position: fixed;
+  z-index: 999;
+  color: white;
+  background-color: #f56b08;
+  padding: 2px 50px;
+  margin: 60px ;
+  font-family: monospace;
+  font-size: 20px;
+}
+.target::before{
+  content: "╠  ";
+}
+
 /* welcome header */
+
 .top{
   display: flex;
   justify-content: center ;
   align-items: center;
-  height: 100% ;
+  height: 100vh ;
+  width: 100%;
 }
 .welcome{
   font-size: 100px;
@@ -189,4 +214,55 @@ body,html {
       color: red;
     clip: rect(10 px , 500px, 80px ,30px );
   }
+}
+
+/*WhatWeAre*/
+
+.WhatWeAre{
+  background-color: #080808;
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.qu {
+  margin: 50px;
+  font-size: 50px;
+  font-family: monospace;
+}
+.WhatWeAre_container{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: initial;
+}
+.WhatWeAre_item{         /* TODO : замостить картинкой элемент и проявлять текст при наведении*/
+  position: relative;
+  display: inline-grid;
+  background-color: #0f0f0f;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  height: 25vw;
+  width: 25vw;
+  margin: auto;
+  font-family: monospace;
+  font-size: 40px;
+  font-weight: 20;
+}
+.WhatWeAre_item::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  background-image: url("images/skull_icon.jpg");
+  background-size: cover;
+  opacity: 1;
+  transition-timing-function: linear;
+  transition-duration: 500ms;
+}
+.WhatWeAre_item:hover::after , .WhatWeAre_item:active::after{
+  opacity: 0;
 }
