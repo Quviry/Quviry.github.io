@@ -1,0 +1,192 @@
+* {
+  margin: 0 ;
+  padding: 0 ;
+}
+body,html {
+  background-color: black ;
+  color: aliceblue ;
+  width: 100%;
+  height: 100%;
+}
+/* welcome header */
+.top{
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+  height: 100% ;
+}
+.welcome{
+  font-size: 100px;
+  font-weight: 600;
+  font-family: Molot;
+  text-align: center ;
+  position: relative;
+  padding: 30px;
+}
+.welcome::before , .welcome::after {
+  content: "ENTER TO MAIN" ;
+  position: absolute;
+  top: 0px ;
+  left: -30px ;
+  height: 100% ;
+  width: 100% ;
+  overflow: hidden ;
+  padding: 30px ;
+  z-index: 1;
+  color: #00eeaa;
+}
+.welcome::before {
+  text-shadow: -5px 0 red;
+  animation: welcome-before 2s linear 0s infinite alternate;
+}
+.welcome::after {
+  text-shadow: 5px 0 blue;
+  animation: welcome-after 2s linear 0s infinite alternate;
+}
+.welcome:hover {
+  z-index: 20;
+  animation: welcome-hover 3s linear 0s paused alternate;
+}
+@keyframes welcome-before {
+  0% {
+    clip: rect(48px, 800px, 62px, 30px);
+  }
+  5% {
+    clip: rect(14px, 800px, 91px, 30px);
+  }
+  10% {
+    clip: rect(118px,800px, 8px, 30px);
+  }
+  15% {
+    clip: rect(81px, 800px, 140px, 30px);
+  }
+  20% {
+    clip: rect(143px,800px, 67px, 30px);
+  }
+  25% {
+    clip: rect(51px, 800px, 121px, 30px);
+  }
+  30% {
+    clip: rect(139px,800px, 67px, 30px);
+  }
+  35% {
+    clip: rect(113px,800px, 94px, 30px);
+  }
+  40% {
+    clip: rect(4px, 800x, 59px, 30px);
+  }
+  45% {
+    clip: rect(89px, 800px, 94px, 30px);
+  }
+  50% {
+    clip: rect(66px, 800px, 9px, 30px);
+  }
+  55% {
+    clip: rect(123px,800px, 19px, 30px);
+  }
+  60% {
+    clip: rect(142px,800px, 132px, 30px);
+  }
+  65% {
+    clip: rect(73px, 800px, 100px, 30px);
+  }
+  70% {
+    clip: rect(57px, 800px, 118px, 30px);
+  }
+  75% {
+    clip: rect(71px, 800px, 15px, 30px);
+  }
+  80% {
+    clip: rect(138px,800px, 100px, 30px);
+  }
+  85% {
+    clip: rect(130px,800px, 33px, 30px);
+  }
+  90% {
+    clip: rect(66px, 800px, 89px, 30px);
+  }
+  95% {
+    clip: rect(12px, 800px, 107px, 30px);
+  }
+  100% {
+    clip: rect(71px, 800px, 58px, 30px);
+  }
+}
+@keyframes welcome-after {
+  0% {
+    clip: rect(31px, 800px, 89px, 30px);
+  }
+  5% {
+    clip: rect(139px,800px, 6px, 30px);
+  }
+  10% {
+    clip: rect(88px, 800px, 23px, 30px);
+  }
+  15% {
+    clip: rect(117px,800px, 6px, 30px);
+  }
+  20% {
+    clip: rect(127px,800px, 41px, 30px);
+  }
+  25% {
+    clip: rect(86px, 800px, 73px, 30px);
+  }
+  30% {
+    clip: rect(16px, 800px, 135px, 30px);
+  }
+  35% {
+    clip: rect(32px, 800px, 13px, 30px);
+  }
+  40% {
+    clip: rect(29px, 800px, 121px, 30px);
+  }
+  45% {
+    clip: rect(65px, 800px, 37px, 30px);
+  }
+  50% {
+    clip: rect(141px,800px, 37px, 30px);
+  }
+  55% {
+    clip: rect(125px,800px, 6px, 30px);
+  }
+  60% {
+    clip: rect(65px, 800px, 63px, 30px);
+  }
+  65% {
+    clip: rect(69px, 800px, 31px, 30px);
+  }
+  70% {
+    clip: rect(101px,800px, 139px, 30px);
+  }
+  75% {
+    clip: rect(82px, 800px, 127px, 30px);
+  }
+  80% {
+    clip: rect(76px, 800px, 15px, 30px);
+  }
+  85% {
+    clip: rect(94px, 800px, 53px, 30px);
+  }
+  90% {
+    clip: rect(45px, 800px, 1px, 30px);
+  }
+  95% {
+    clip: rect(129px,800px, 139px, 30px);
+  }
+  100% {
+    clip: rect(90px, 800px, 87px, 30px);
+  }
+}
+@keyframes welcome-hover {
+  0% {
+    clip: rect(10px, 300px, 80px, 30px);
+  }
+    500%{
+      color: #770000;
+    clip: rect(10 px , 400px, 80px ,30px );
+  }
+    100%{
+      color: red;
+    clip: rect(10 px , 500px, 80px ,30px );
+  }
+}
