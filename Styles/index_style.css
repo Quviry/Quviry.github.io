@@ -30,6 +30,22 @@ body{
 .target::before{
   content: "╠  ";
 }
+.upd {
+  position: fixed;
+  z-index: 999;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  right: 2vw;
+  top: 13vh;
+  padding : 2px 10px;
+  font-family: monospace;
+
+  font-size: 2vh;
+}
+.upd::before{
+  content: "֍ ";
+}
 
 /* welcome header */
 
