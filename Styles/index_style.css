@@ -61,7 +61,7 @@ body{
   font-weight: 600;
   font-family: Molot;
   text-align: center ;
-  position: relative;
+  position: sticky;
   padding: 30px;
 }
 .welcome::before , .welcome::after {
@@ -263,7 +263,7 @@ body{
   text-align: center;
   height: 25vw;
   width: 25vw;
-  margin: auto;
+  /*margin: auto;*/
   font-family: monospace;
   font-size: 40px;
   font-weight: 20;
