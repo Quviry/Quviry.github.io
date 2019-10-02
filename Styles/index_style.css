@@ -254,7 +254,7 @@ body{
   justify-content: space-around;
   flex-direction: initial;
 }
-.WhatWeAre_item{         /* TODO : замостить картинкой элемент и проявлять текст при наведении*/
+.WhatWeAre_item{
   position: relative;
   display: inline-grid;
   background-color: #0f0f0f;
